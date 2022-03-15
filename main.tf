@@ -36,5 +36,8 @@ resource "aws_securityhub_member" "example" {
   depends_on = [aws_securityhub_account.security_hub]
   account_id = var.member_account_id
   email      = var.member_mail_id
-  invite     = true
+  invite     = true 
+}
+resource "aws_securityhub_finding_aggregator" "example" {
+  linking_mode = "ALL_REGIONS"
 }

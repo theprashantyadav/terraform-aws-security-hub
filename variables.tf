@@ -49,3 +49,10 @@ variable "enable" {
   description = "Set to false to prevent the module from creating any resources."
 }
 
+variable "name" {
+  type        = string
+  default     = ""
+  description = "Name  (e.g. `app` or `cluster`)."
+
+}
+
